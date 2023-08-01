@@ -2,13 +2,15 @@
 
 int main() {
     int num[5];
-    num[0] = 10;
-    num[1] = 5;
-    num[2] = 9;
-    num[3] = 8;
-    num[4] = 7;
+    int i;
+    for (i = 0; i < 5; i++) {
+        printf("Informe o valor da posição %d: ", i);
+        scanf("%d", &num[i]);
 
-
+    }
+    for (i = 0; i < 5; i++){
+        printf("O valor informado %d foi %d \n", i, num[i]);
+    }
 
     return 0;
 }
